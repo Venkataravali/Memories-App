@@ -68,3 +68,43 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+##
+To build this application we need this packages 
+1.axios :for fetching data from api 
+2.moment : library working with time and date 
+3.react-file-base64: will use to upload the files(images) will convert them into
+base64 formate (binary formate)
+4.redux :
+5.redux-thunk :used to handle the async actions using redux 
+
+folder structure 
+in src=>components
+Form and Posts 
+in Form =>Form.js and styles.js 
+in Posts =>Posts.ja and styles.js 
+
+in Posts another folder such as Post=>Post.js and style.js 
+in App.js 
+import {Container,AppBar,Grow,Grid,Typography } from '@material-ui/core;
+Typography : basic styling to h2 p 
+it gives standard look for form 
+
+add styles to eacj post ,posts and form 
+Now need to connect this to backend and connecting db 
+For that need to create one folder api 
+then create file called index.js 
+import axios there 
+to make api call 
+
+const url = 'http://localhost:5000/posts';
+to hit backend server 
+export const fetchPosts = ()=>axios.get(url);
+Here we use Redux capabilities when there is actions towrs to backend 
+and dispatch those actions 
+1.actions 
+2.reducers folders created 
+
+
+
+
